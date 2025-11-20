@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dialectic Decoder</title>
+    <link rel="stylesheet" href="popup.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>XYZ 369 Decoder</h1>
+            <div id="status-pill" class="status-pill">Checking AI...</div>
+        </header>
+
+        <div class="controls">
+            <button id="btn-analyze" class="btn-primary">
+                <span class="icon">🧠</span> Decode (369)
+            </button>
+            <button id="btn-summarize" class="btn-secondary">
+                <span class="icon">📝</span> Summarize
+            </button>
+        </div>
+
+        <!-- Loading State -->
+        <div id="loader" class="loader hidden">
+            <div class="terminal-window">
+                <div class="terminal-header">
+                    <span class="dot red"></span><span class="dot yellow"></span><span class="dot green"></span>
+                    <span class="title">processing.exe</span>
+                </div>
+                <div class="terminal-body">
+                    <div class="line">> Reading <span id="meta-words">0</span> words...</div>
+                    <div class="line">> Strategy: <span id="meta-strategy" class="highlight">...</span></div>
+                    <div class="line">> Applying 369 Pattern...</div>
+                    <div class="typing-cursor">_</div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Error State -->
+        <div id="error-msg" class="error-card hidden"></div>
+
+        <!-- Results -->
+        <div id="results" class="results hidden">
+            <div class="card chola">
+                <div class="card-header">CHOLA (Thesis)</div>
+                <div class="card-body" id="out-chola"></div>
+            </div>
+            <div class="card malandra">
+                <div class="card-header">MALANDRA (Antithesis)</div>
+                <div class="card-body" id="out-malandra"></div>
+            </div>
+            <div class="card fresa">
+                <div class="card-header">FRESA (Synthesis)</div>
+                <div class="card-body" id="out-fresa"></div>
+            </div>
+        </div>
+
+        <div id="summary-result" class="results hidden">
+             <div class="card summary">
+                <div class="card-header">Summary</div>
+                <div class="card-body" id="out-summary"></div>
+            </div>
+        </div>
+
+    </div>
+    <script src="popup.js"></script>
+</body>
+</html>
