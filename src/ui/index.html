@@ -12,57 +12,64 @@
 <body>
     <div class="quantum-portal">
         <header class="portal-header">
-            <img src="images/logo.svg" alt="Chalamandra Logo" class="portal-logo">
-            <h1 class="portal-title">Chalamandra</h1>
-            <span id="system-ready-indicator" class="status-indicator">Online</span>
+            <img src="images/logo.png" alt="Chalamandra Logo" class="portal-logo">
+            <h1 class="portal-title">Chalamandra QuantumMind XYZ</h1>
         </header>
 
         <main class="portal-main">
+            <h2 class="synthesis-title">La Síntesis de 0.8 Segundos</h2>
+
             <div class="input-area">
-                <textarea id="idea-input" placeholder="Escribe tu dilema creative o pega el texto..." rows="4"></textarea>
-                <button id="upload-multimodal-btn" class="icon-button" title="Subir imagen (próximamente)">
-                    <img src="images/upload.svg" alt="Upload">
-                </button> 
+                <label for="idea-input" class="input-label">Entrada de Usuario:</label>
+                <!-- El textarea irá aquí, pero lo mantenemos simple por ahora -->
             </div>
             
             <div class="controls-area">
-                <button id="analyze-btn" class="action-button primary">Generar Síntesis Cuántica</button>
+                <button id="analyze-btn" class="action-button primary">Iniciar Análisis Dialéctico</button>
             </div>
 
             <div id="status-display" class="status-message hidden">
                 <div class="spinner"></div>
-                Analizando en superposición cuántica...
+                Analizando...
             </div>
 
-            <div id="result-area" class="result-area hidden">
-                <!-- Tarjetas de Personalidad -->
-                <div class="personality-card chola">
-                    <span class="personality-label">CHOLA</span>
-                    <p class="card-subtitle">Pattern recongition & ancient wisdom...</p>
-                    <p class="insight-text" id="chola-insight-text"></p>
+            <div id="result-area" class="result-area">
+                <!-- Contenedor para las 3 personalidades -->
+                <div class="personalities-container">
+                    <!-- CHOLA (Tesis) -->
+                    <div class="personality-card chola">
+                        <img src="images/chola_icon.svg" alt="Chola Icon" class="personality-icon">
+                        <h3 class="personality-label">CHOLA</h3>
+                        <p class="card-subtitle">(Sabiduría)</p>
+                        <p class="insight-text">Análisis de Mercado: Evalúa la necesidad, competencia y timing. Prototipa y valida con usuarios reales para reducir riesgos.</p>
+                    </div>
+                    <!-- FRESA (Síntesis) -->
+                    <div class="personality-card fresa">
+                        <img src="images/fresa_icon.svg" alt="Fresa Icon" class="personality-icon">
+                        <h3 class="personality-label">FRESA</h3>
+                        <p class="card-subtitle">(Síntesis)</p>
+                        <p class="insight-text">Desarrollo Ágil: Enfoque en un MVP (Producto Mínimo Viable), itera rápido y construye comunidad desde el principio.</p>
+                    </div>
+                    <!-- MALANDRA (Antítesis) -->
+                    <div class="personality-card malandra">
+                        <img src="images/malandra_icon.svg" alt="Malandra Icon" class="personality-icon">
+                        <h3 class="personality-label">MALANDRA</h3>
+                        <p class="card-subtitle">(Disrupción)</p>
+                        <p class="insight-text">Go-to-Market Innovador: Identifica un nicho no explorado, crea expectación con marketing viral y busca early adopters.</p>
+                    </div>
                 </div>
-                <div class="personality-card malandra">
-                    <span class="personality-label">MALANDRA</span>
-                    <p class="card-subtitle">Critical analysis & disruption...</p>
-                    <p class="insight-text" id="malandra-insight-text"></p>
-                </div>
-                <div class="personality-card fresa">
-                    <span class="personality-label">FRESA</span>
-                    <p class="card-subtitle">Optimal pathfinding & clarity...</p>
-                    <p class="insight-text" id="fresa-insight-text"></p>
-                </div>
-                
-                <div class="feedback-controls">
-                    <button id="accept-btn" class="action-button success">Acepto esta Síntesis</button>
-                    <button id="reject-btn" class="action-button danger">Necesito Otra Perspectiva</button>
+
+                <!-- Resultado Final -->
+                <div class="final-result-area">
+                    <h4 class="final-result-title">Resultado Final</h4>
+                    <p class="final-synthesis" id="synthesis-output">La Mejor Manera Hacia Adelante: Lanzamiento Ágil y Nicho Enfocado</p>
+                    <div class="result-footer">
+                        <div class="confidence-score">Puntaje de Confianza: <span id="confidence-score">92%</span></div>
+                        <div class="processing-time">Tiempo a Procesamiento: <span id="processing-time">0.8s</span></div>
+                    </div>
                 </div>
             </div>
         </main>
-
-        <footer class="portal-footer">
-            <span class="version">v1.1</span>
-            <span class="powered-by">Powered by Gemini Nano</span>
-        </footer>
     </div>
     <script src="main.js"></script>
 </body>
