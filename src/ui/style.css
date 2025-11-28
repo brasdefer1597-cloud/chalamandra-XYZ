@@ -40,12 +40,21 @@ body {
     margin-bottom: 16px;
 }
 
-.input-label {
-    font-size: 0.8em;
-    text-transform: uppercase;
-    color: #8b949e;
-    margin-bottom: 8px;
-    display: block;
+.input-area {
+    margin-bottom: 16px;
+}
+
+.input-style {
+    width: 100%;
+    height: 80px;
+    padding: 10px;
+    border-radius: 8px;
+    border: 1px solid #30363d;
+    background-color: #0d1117;
+    color: #c9d1d9;
+    font-family: 'Inter', sans-serif;
+    font-size: 1em;
+    resize: vertical;
 }
 
 .controls-area {
@@ -125,11 +134,11 @@ body {
 }
 .chola .personality-label { color: #00A3FF; }
 
-.salamandra {
-    border-color: #FFD700;
-    box-shadow: 0 0 10px rgba(255, 215, 0, 0.6);
+.fresa {
+    border-color: #3FFF33;
+    box-shadow: 0 0 10px rgba(63, 255, 51, 0.6);
 }
-.salamandra .personality-label { color: #FFD700; }
+.fresa .personality-label { color: #3FFF33; }
 
 .malandra {
     border-color: #FF33A8;
