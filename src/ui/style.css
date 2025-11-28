@@ -125,11 +125,11 @@ body {
 }
 .chola .personality-label { color: #00A3FF; }
 
-.fresa {
-    border-color: #3FFF33;
-    box-shadow: 0 0 10px rgba(63, 255, 51, 0.6);
+.salamandra {
+    border-color: #FFD700;
+    box-shadow: 0 0 10px rgba(255, 215, 0, 0.6);
 }
-.fresa .personality-label { color: #3FFF33; }
+.salamandra .personality-label { color: #FFD700; }
 
 .malandra {
     border-color: #FF33A8;
