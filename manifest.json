@@ -1,24 +1,28 @@
 {
   "manifest_version": 3,
   "name": "Chalamandra QuantumMind XYZ",
-  "version": "1.0",
-  "description": "Análisis dialéctico con IA Local-First (Gemini Nano)",
-  "permissions": [
-    "storage",
-    "contextMenus"
-  ],
-  "background": {
-    "service_worker": "background.js",
-    "type": "module"
+  "version": "1.0.0",
+  "description": "Elite Dialectical AI Engine using Gemini Nano. Thesis • Antithesis • Synthesis.",
+  "icons": {
+    "16": "assets/icon.png",
+    "48": "assets/icon.png",
+    "128": "assets/icon.png"
   },
   "action": {
     "default_popup": "popup.html",
-    "default_icon": {
-      "128": "static/images/icon128.png"
-    }
+    "default_icon": "assets/icon.png"
   },
-  "icons": {
-    "128": "static/images/icon128.png"
+  "background": {
+    "service_worker": "background.js"
   },
-  "options_page": "options.html"
+  "permissions": [
+    "storage",
+    "activeTab"
+  ],
+  "host_permissions": [
+    "<all_urls>"
+  ],
+  "optional_permissions": [
+    "aiLanguageModelOriginTrial" 
+  ]
 }
