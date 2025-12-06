@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Chalamandra QuantumMind XYZ</title>
+  <link rel="stylesheet" href="popup.css">
+</head>
+<body>
+
+  <div id="main-container">
+    
+    <!-- Header / Input Section -->
+    <div class="header-section">
+      <h2 style="text-align: center; margin: 5px 0; color: #58a6ff;">🦎 QuantumMind XYZ</h2>
+      <textarea id="problem-input" placeholder="Describe el caos o bloqueo aquí..." rows="3" style="width: 100%; background: #161b22; color: white; border: 1px solid #30363d; border-radius: 6px; padding: 8px; resize: none; box-sizing: border-box; font-family: inherit;"></textarea>
+    </div>
+
+    <!-- Control Deck (Evolution Levels) -->
+    <div id="evolution-control">
+      <button class="level-button active" data-level="3">Nivel 3<br><span style="font-size: 0.7em;">Táctico</span></button>
+      <button class="level-button" data-level="6">Nivel 6<br><span style="font-size: 0.7em;">Estratégico</span></button>
+      <button class="level-button" data-level="9">Nivel 9<br><span style="font-size: 0.7em;">Cuántico</span></button>
+    </div>
+
+    <button id="analyze-button" style="width: 100%; padding: 10px; background: #238636; color: white; border: none; border-radius: 6px; font-weight: bold; cursor: pointer; margin-bottom: 10px;">
+      ⚡ INICIAR SECUENCIA
+    </button>
+
+    <!-- Loading State -->
+    <div id="loading-indicator" class="loading-indicator" style="display: none;">
+      <p>Sincronizando Núcleos Neurales...</p>
+    </div>
+
+    <!-- Results Container -->
+    <div id="results-container" style="display: none; display: flex; flex-direction: column; gap: 12px;">
+      
+      <!-- CHOLA (Tesis) -->
+      <div id="chola-card" class="card">
+        <h3 style="color: #f29f05;">CHOLA – Tesis (Oportunidad)</h3>
+        <div class="card-content">Esperando input...</div>
+      </div>
+
+      <!-- MALANDRA (Antítesis) -->
+      <div id="malandra-card" class="card">
+        <h3 style="color: #ff4d4d;">MALANDRA – Antítesis (Riesgo)</h3>
+        <div class="card-content">Esperando input...</div>
+      </div>
+
+      <!-- FRESA (Síntesis) -->
+      <div id="fresa-card" class="card">
+        <h3 style="color: #ffc107;">FRESA – Síntesis (Ejecución)</h3>
+        <div class="card-content">Esperando síntesis...</div>
+      </div>
+
+    </div>
+
+    <!-- Status Toast -->
+    <div id="status-message">Copiado al portapapeles</div>
+
+  </div>
+
+  <script type="module" src="popup.js"></script>
+</body>
+</html>
